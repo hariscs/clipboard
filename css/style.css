@@ -1,0 +1,120 @@
+:root {
+	--Strong-Cyan: #26baa4;
+	--Light-Blue: #6173ff;
+	--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+	--Grayish-Blue: hsl(201, 11%, 66%);
+	--white: hsl(0, 0%, 100%);
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	font-family: 'Bai Jamjuree', sans-serif;
+	font-size: 18px;
+}
+img {
+	max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--Dark-Grayish-Blue);
+}
+
+p {
+	color: var(--Grayish-Blue);
+}
+
+a {
+	text-decoration: none;
+	color: var(--Grayish-Blue);
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+/* buttons */
+.btn {
+	display: inline-block;
+	padding: 0.8em 3.2em;
+	border-radius: 100vh;
+	color: var(--white);
+	cursor: pointer;
+}
+
+.btn + .btn {
+	margin-top: 1em;
+}
+
+.btn:hover,
+.btn:focus {
+	opacity: 0.7;
+}
+
+.btn-primary {
+	background: var(--Strong-Cyan);
+	box-shadow: 0px 8px 15px 0px rgba(38, 186, 164, 0.43);
+}
+
+.btn-secondary {
+	background: var(--Light-Blue);
+	box-shadow: 0px 8px 15px 0px rgba(97, 115, 255, 0.43);
+}
+
+.btn-group {
+	display: flex;
+	flex-direction: column;
+}
+
+/* layout */
+
+.container {
+	/* width: 90%; */
+	max-width: 375px;
+	margin: 0 10%;
+}
+
+header,
+section,
+footer {
+	padding: 5em 0;
+	text-align: center;
+}
+
+header {
+	background: url(../images/bg-header-mobile.png) no-repeat;
+	background-position: center;
+	background-size: cover;
+}
+
+.track-cols {
+	display: flex;
+	flex-direction: column;
+}
+
+.col-img {
+	order: -1;
+}
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.flex img + img {
+	margin-top: 4em;
+}
