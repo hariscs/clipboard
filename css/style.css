@@ -323,9 +323,11 @@ footer {
 
 	.links ul {
 		display: flex;
+		justify-content: center;
 		gap: 2em;
 	}
 
-	.links .list-item {
+	.links .container {
+		width: 100%;
 	}
 }
