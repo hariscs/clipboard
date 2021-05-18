@@ -19,7 +19,13 @@
 			href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap"
 			rel="stylesheet"
 		/>
-
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
 		<!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
 		<style>
 			.attribution {
@@ -32,14 +38,17 @@
 		</style>
 	</head>
 	<body>
+		<!-- main header  -->
 		<header class="main-header">
 			<div class="container">
-				<img src="./images/logo.svg" alt="logo" class="logo=header" />
-				<h1 class="main-title">A history of everything you copy</h1>
-				<p class="main-subtitle">
-					Clipboard allows you to track and organize everything you copy.
-					Instantly access your clipboard on all your devices.
-				</p>
+				<div class="main-header">
+					<img src="./images/logo.svg" alt="logo" class="logo=header" />
+					<h1 class="main-title">A history of everything you copy</h1>
+					<p class="main-subtitle">
+						Clipboard allows you to track and organize everything you copy.
+						Instantly access your clipboard on all your devices.
+					</p>
+				</div>
 				<div class="btn-group">
 					<a href="#" class="btn btn-primary">Download for iOS</a>
 					<a href="#" class="btn btn-secondary">Download for Mac</a>
@@ -47,6 +56,7 @@
 			</div>
 		</header>
 
+		<!-- tracking section -->
 		<section class="track-sec">
 			<div class="container">
 				<div class="track-header">
@@ -59,21 +69,27 @@
 				</div>
 
 				<div class="track-cols">
-					<div class="info-col">
-						<h2 class="info-title">Quick Search</h2>
-						<p class="info-subtitle">
-							Easily search your snippets by content, category, web address,
-							application, and more.
-						</p>
-						<h2 class="info-title">iCloud Sync</h2>
-						<p class="info-subtitle">
-							Instantly saves and syncs snippets across all your devices.
-						</p>
-						<h2 class="info-title">Complete History</h2>
-						<p class="info-subtitle">
-							Retrieve any snippets from the first moment you started using the
-							app.
-						</p>
+					<div class="info-cols">
+						<div class="info-col">
+							<h2 class="info-title">Quick Search</h2>
+							<p class="info-subtitle">
+								Easily search your snippets by content, category, web address,
+								application, and more.
+							</p>
+						</div>
+						<div class="info-col">
+							<h2 class="info-title">iCloud Sync</h2>
+							<p class="info-subtitle">
+								Instantly saves and syncs snippets across all your devices.
+							</p>
+						</div>
+						<div class="info-col">
+							<h2 class="info-title">Complete History</h2>
+							<p class="info-subtitle">
+								Retrieve any snippets from the first moment you started using
+								the app.
+							</p>
+						</div>
 					</div>
 
 					<img
@@ -85,6 +101,7 @@
 			</div>
 		</section>
 
+		<!-- access section -->
 		<section class="access">
 			<div class="container">
 				<h2 class="access-title">Access Clipboard anywhere</h2>
@@ -100,7 +117,8 @@
 			</div>
 		</section>
 
-		<section class="work-flow">
+		<!-- workflow section -->
+		<section class="workflow">
 			<div class="container">
 				<div class="work-titles">
 					<h2 class="flow-title">Supercharge your workflow</h2>
@@ -150,11 +168,13 @@
 			</div>
 		</section>
 
+		<!-- logos section -->
 		<section class="logos">
-			<div class="container flex">
+			<div class="container logo-flex">
 				<img src="./images/logo-google.png" alt="logo" class="logo-img" />
 				<img src="./images/logo-ibm.png" alt="logo" class="logo-img" />
 				<img src="./images/logo-microsoft.png" alt="logo" class="logo-img" />
+				<img src="./images/logo-hp.png" alt="logo" class="logo-img" />
 				<img
 					src="./images/logo-vector-graphics.png"
 					alt="logo"
@@ -163,6 +183,7 @@
 			</div>
 		</section>
 
+		<!-- download section -->
 		<section class="download">
 			<div class="container">
 				<div class="download-text">
@@ -180,13 +201,16 @@
 			</div>
 		</section>
 
+		<!-- main footer -->
 		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-logo">
+			<div class="footer-logo">
+				<div class="container">
 					<img src="./images/logo.svg" alt="logo" class="logo" />
 				</div>
+			</div>
 
-				<div class="links">
+			<div class="links">
+				<div class="container">
 					<ul>
 						<li class="list-item"><a href="#">FAQs</a></li>
 						<li class="list-item"><a href="#">Contact Us</a></li>
@@ -195,17 +219,25 @@
 						<li class="list-item"><a href="#">Install Guide</a></li>
 					</ul>
 				</div>
+			</div>
 
-				<div class="icons">
-					<ul>
+			<div class="icons">
+				<div class="container">
+					<ul class="icons-flex">
 						<li class="list-icon">
-							<img src="./images/icon-facebook.svg" alt="icon" />
+							<a href="#">
+								<i class="fab fa-facebook-square fa-2x"></i>
+							</a>
 						</li>
 						<li class="list-icon">
-							<img src="./images/icon-twitter.svg" alt="icon" />
+							<a href="#">
+								<i class="fab fa-twitter fa-2x"></i>
+							</a>
 						</li>
 						<li class="list-icon">
-							<img src="./images/icon-instagram.svg" alt="icon" />
+							<a href="#">
+								<i class="fab fa-instagram fa-2x"></i>
+							</a>
 						</li>
 					</ul>
 				</div>
