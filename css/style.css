@@ -89,8 +89,9 @@ li {
 /* layout */
 
 .container {
+	width: 90%;
 	max-width: 375px;
-	margin: 0 10%;
+	margin: 0 auto;
 }
 
 header,
@@ -102,7 +103,6 @@ footer {
 
 header {
 	background: url(../images/bg-header-mobile.png) no-repeat;
-	background-position: center;
 	background-size: cover;
 }
 
@@ -185,7 +185,6 @@ header {
 footer {
 	background: hsl(0, 0%, 98%);
 	color: var(--Dark-Grayish-Blue);
-	font-weight: 600;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -204,4 +203,129 @@ footer {
 
 .list-icon + .list-icon {
 	margin-left: 2em;
+}
+
+/* media query */
+@media (min-width: 750px) {
+	/* general layout */
+
+	header {
+		background: url(../images/bg-header-desktop.png) no-repeat;
+	}
+
+	/* main header */
+	.main-subtitle {
+		max-width: 55ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.container {
+		max-width: 1440px;
+	}
+
+	/* buttons */
+	.btn-group {
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.btn + .btn {
+		margin-top: 0;
+		margin-left: 1em;
+	}
+
+	/* track section */
+
+	.track-header {
+		max-width: 60ch;
+		margin: auto;
+	}
+	.track-cols {
+		flex-direction: row;
+		align-items: center;
+		gap: 4em;
+		text-align: left;
+		margin-top: 4em;
+	}
+
+	.info-img {
+		order: -1;
+		margin-left: -5em;
+	}
+	.info-img,
+	.info-cols {
+		flex: 1 1 50%;
+	}
+
+	.col-img {
+		margin: 0;
+		padding: 0;
+	}
+
+	/* access section */
+	.access-subtitle {
+		max-width: 60ch;
+		margin: auto;
+	}
+
+	/* workflow section */
+	.flow-title {
+		max-width: 60ch;
+	}
+
+	.flow-info {
+		display: flex;
+		align-items: center;
+		justify-items: center;
+		gap: 2em;
+		margin-top: 2em;
+	}
+
+	.info-child {
+		max-width: 30ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* logos section */
+	.logo-flex {
+		flex-direction: row;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+
+	.logo-flex img + img {
+		margin-top: 0;
+	}
+
+	/* download section */
+	.download {
+		margin-bottom: 6em;
+	}
+	.download-title,
+	.download-subtitle {
+		max-width: 60ch;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	/* footer */
+	footer {
+		flex-direction: row;
+		gap: 2em;
+		align-items: center;
+		justify-content: space-between;
+		padding: 2em 4em;
+		text-align: left;
+	}
+
+	.links ul {
+		display: flex;
+		gap: 2em;
+	}
+
+	.links .list-item {
+	}
 }
